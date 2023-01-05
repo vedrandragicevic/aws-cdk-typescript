@@ -35,6 +35,21 @@
     "@aws-cdk/core:enablePartitionLiterals": true,
     "@aws-cdk/aws-events:eventsTargetQueueSameAccount": true,
     "@aws-cdk/aws-iam:standardizedServicePrincipals": true,
-    "@aws-cdk/aws-ecs:disableExplicitDeploymentControllerForCircuitBreaker": true
+    "@aws-cdk/aws-ecs:disableExplicitDeploymentControllerForCircuitBreaker": true,
+    "globals": {
+      "appName": "ts-lambda-app",
+      "region": "us-east-1"
+    },
+    "environments": [
+      {
+        "environment": "dev",
+        "branchName": "dev-deploy",
+        "accountNumber": "TEST",
+        "region": "us-east-1",
+        "cidr": "TEST",
+        "private_cidr": "TEST",
+        "privateSubnetIds": ["TEST1", "TEST2", "TEST3", "TEST4"]
+      }
+    ]
   }
 }
