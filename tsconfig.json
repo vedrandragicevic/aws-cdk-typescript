@@ -21,13 +21,8 @@
     "strictPropertyInitialization": false,
     "typeRoots": [
       "./node_modules/@types"
-    ],
-    // Add this
-    "baseUrl": ".",
-  "paths": {
-    "/opt/*": ["lambda-layer/*"]
-  }
-  }, 
+    ]
+  },
   "exclude": [
     "node_modules",
     "cdk.out"

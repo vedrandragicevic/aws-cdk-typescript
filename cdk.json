@@ -1,5 +1,5 @@
 {
-  "app": "npx ts-node --prefer-ts-exts bin/aws-cdk-ts.ts",
+  "app": "npx ts-node --prefer-ts-exts bin/cvham_ts.ts",
   "watch": {
     "include": [
       "**"
@@ -37,18 +37,37 @@
     "@aws-cdk/aws-iam:standardizedServicePrincipals": true,
     "@aws-cdk/aws-ecs:disableExplicitDeploymentControllerForCircuitBreaker": true,
     "globals": {
-      "appName": "ts-lambda-app",
+      "appName": "cvham_ts",
       "region": "us-east-1"
     },
     "environments": [
       {
         "environment": "dev",
         "branchName": "dev-deploy",
-        "accountNumber": "TEST",
+        "accountNumber": "073126144448",
         "region": "us-east-1",
-        "cidr": "TEST",
-        "private_cidr": "TEST",
-        "privateSubnetIds": ["TEST1", "TEST2", "TEST3", "TEST4"]
+        "agentActivationKey": "ADNO6-2LC9J-LO96J-UCUNL-ULV5E",
+        "storage_gateway_instrument_credentials": "arn:aws:secretsmanager:us-east-1:073126144448:secret:dataops-bos1-storage-gateway-workflow-WCF2kn",
+        "raw_name": "raw",
+        "staging_name": "validated",
+        "analytics_name": "curated"
+      },
+      {
+        "environment": "val",
+        "branchName": "val-deploy",
+        "accountNumber": "876134510184",
+        "region": "us-east-1"
+      },
+      {
+        "environment": "prod",
+        "branchName": "prod-deploy",
+        "accountNumber": "170999192863",
+        "region": "us-east-1",
+        "agentActivationKey": "QAQVT-ESKFT-25TQO-IDLQA-5GS7O",
+        "chroma_instrument_credentials": "",
+        "raw_name": "raw",
+        "staging_name": "staging",
+        "analytics_name": "analytics"
       }
     ]
   }
