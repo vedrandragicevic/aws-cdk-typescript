@@ -43,31 +43,25 @@
     "environments": [
       {
         "environment": "dev",
-        "branchName": "dev-deploy",
-        "accountNumber": "073126144448",
+        "branchName": "dev",
+        "accountNumber": "ACCOUNT_NUMBER",
         "region": "us-east-1",
-        "agentActivationKey": "ADNO6-2LC9J-LO96J-UCUNL-ULV5E",
-        "storage_gateway_instrument_credentials": "arn:aws:secretsmanager:us-east-1:073126144448:secret:dataops-bos1-storage-gateway-workflow-WCF2kn",
-        "raw_name": "raw",
-        "staging_name": "validated",
-        "analytics_name": "curated"
-      },
-      {
-        "environment": "val",
-        "branchName": "val-deploy",
-        "accountNumber": "876134510184",
-        "region": "us-east-1"
+        "agentActivationKey": "ACTIVATION_KEY",
+        "storage_gateway_instrument_credentials": "SECRET",
+        "raw_name": "TEST_RAW",
+        "staging_name": "TEST_STAGING",
+        "analytics_name": "TEST_ANALYTICS"
       },
       {
         "environment": "prod",
-        "branchName": "prod-deploy",
-        "accountNumber": "170999192863",
+        "branchName": "prod",
+        "accountNumber": "ACCOUNT_NUMBER",
         "region": "us-east-1",
-        "agentActivationKey": "QAQVT-ESKFT-25TQO-IDLQA-5GS7O",
-        "chroma_instrument_credentials": "",
-        "raw_name": "raw",
-        "staging_name": "staging",
-        "analytics_name": "analytics"
+        "agentActivationKey": "ACTIVATION_KEY",
+        "storage_gateway_instrument_credentials": "SECRET",
+        "raw_name": "TEST_RAW",
+        "staging_name": "TEST_STAGING",
+        "analytics_name": "TEST_ANALYTICS"
       }
     ]
   }
